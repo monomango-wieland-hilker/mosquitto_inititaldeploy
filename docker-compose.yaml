@@ -6,3 +6,11 @@ services:
     container_name: mosquitto-broker
     volumes:
       - ./config:/mosquitto/config
+      
+    ports:
+      #TCP Connection Port.
+      #- 5672:5672
+      #MQTT COnnection Port.
+      #- 1883:1883
+      #Web Panel PORT
+      - 9001:9001
